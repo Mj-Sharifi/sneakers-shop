@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Stack, Skeleton, Grid, Hidden } from "@mui/material";
+import { Box, Stack, Skeleton, Grid } from "@mui/material";
 export default function LoaderSkeleton() {
   return (
     <Grid item xs={10} sm={6} md={4} lg={3}>
