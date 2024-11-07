@@ -17,7 +17,7 @@ export default function Explore() {
   useEffect(() => {
     (async () => {
       try {
-        const res = await fetch(`${process.env.REACT_APP_API}sneakers-shop-number`);
+        const res = await fetch(`https://all-backend.liara.run/sneakers-shop-number`);
         const data = await res.json();
         setSneakersNo(+data.number);
       } catch (error) {
@@ -31,7 +31,7 @@ export default function Explore() {
     (async () => {
       try {
         const res = await fetch(
-          `${process.env.REACT_APP_API}sneakers-shop-sneakers?_page=${page}&_limit=${perPage}`
+          `https://all-backend.liara.run/sneakers-shop-sneakers?_page=${page}&_limit=${perPage}`
         );
         const data = await res.json();
         setSneakers(data);
